@@ -2,7 +2,7 @@ import UIKit
 
 // [50, 10, 5, 2]
 
-var value = 117
+var value = 8
 
 var valor50 = 50
 var valor10 = 10
@@ -26,10 +26,12 @@ if valor10 >= valor10 {
 }
 
 if valor5 >= valor5 {
-    valor5 = value / 5
-    value = value % 5
-    if valor5 != 0 {
-        print("\(valor5) notas de R$ 5.00")
+    if value % 2 != 0 {
+        valor5 = value / 5
+        value = value % 5
+        if valor5 != 0 {
+            print("\(valor5) notas de R$ 5.00")
+        }
     }
 }
 
